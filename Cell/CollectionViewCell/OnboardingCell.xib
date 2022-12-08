@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="OnboardingCell" id="uY1-iJ-YiW" customClass="OnboardingCell" customModule="TkweenProject" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="227" height="307"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="227" height="307"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Nsa-Tr-DI3">
+                        <rect key="frame" x="0.0" y="0.0" width="227" height="307"/>
+                        <subviews>
+                            <imageView opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="VQI-av-ekf">
+                                <rect key="frame" x="-11.5" y="0.0" width="250" height="250"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="250" id="BA3-bQ-sOP"/>
+                                    <constraint firstAttribute="width" constant="250" id="hcd-w4-2M9"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description is the pattern " lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sns-9r-Jpj">
+                                <rect key="frame" x="0.0" y="287.5" width="227" height="19.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <color key="textColor" red="0.18823529410000001" green="0.18823529410000001" blue="0.18823529410000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <size key="shadowOffset" width="0.0" height="0.0"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PmF-c1-RdD">
+                                <rect key="frame" x="0.0" y="248.5" width="227" height="29"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                <color key="textColor" red="0.94901960780000005" green="0.41960784309999999" blue="0.1137254902" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="highlightedColor" red="0.94901960780000005" green="0.41960784309999999" blue="0.1137254902" alpha="1" colorSpace="calibratedRGB"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="VQI-av-ekf" firstAttribute="top" secondItem="Nsa-Tr-DI3" secondAttribute="top" id="4tq-Ch-RoK"/>
+                            <constraint firstAttribute="trailing" secondItem="PmF-c1-RdD" secondAttribute="trailing" id="HJ1-lz-Ane"/>
+                            <constraint firstItem="VQI-av-ekf" firstAttribute="centerX" secondItem="Nsa-Tr-DI3" secondAttribute="centerX" id="J2r-md-zpu"/>
+                            <constraint firstItem="Sns-9r-Jpj" firstAttribute="leading" secondItem="Nsa-Tr-DI3" secondAttribute="leading" id="SWD-eC-Mmy"/>
+                            <constraint firstItem="Sns-9r-Jpj" firstAttribute="top" secondItem="PmF-c1-RdD" secondAttribute="bottom" constant="10" id="XGR-aH-t6D"/>
+                            <constraint firstAttribute="bottom" secondItem="Sns-9r-Jpj" secondAttribute="bottom" id="ZTi-W3-bbv"/>
+                            <constraint firstAttribute="trailing" secondItem="Sns-9r-Jpj" secondAttribute="trailing" id="gHa-pb-cO1"/>
+                            <constraint firstItem="PmF-c1-RdD" firstAttribute="leading" secondItem="Nsa-Tr-DI3" secondAttribute="leading" id="oyL-13-Ori"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="xAG-Qg-bhY"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="Nsa-Tr-DI3" secondAttribute="trailing" id="KDT-C9-c2H"/>
+                <constraint firstItem="Nsa-Tr-DI3" firstAttribute="top" secondItem="uY1-iJ-YiW" secondAttribute="top" id="N15-vv-vTp"/>
+                <constraint firstAttribute="bottom" secondItem="Nsa-Tr-DI3" secondAttribute="bottom" id="Z2n-9U-830"/>
+                <constraint firstItem="Nsa-Tr-DI3" firstAttribute="leading" secondItem="uY1-iJ-YiW" secondAttribute="leading" id="zTE-97-EhY"/>
+            </constraints>
+            <size key="customSize" width="227" height="307"/>
+            <connections>
+                <outlet property="onboardingDescriptionLabel" destination="Sns-9r-Jpj" id="rbL-A4-COS"/>
+                <outlet property="onboardingImageView" destination="VQI-av-ekf" id="LXn-4f-bFw"/>
+                <outlet property="onboardingMessageLabel" destination="PmF-c1-RdD" id="Yqs-Jv-V3g"/>
+            </connections>
+            <point key="canvasLocation" x="-199.27536231884059" y="-149.66517857142856"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

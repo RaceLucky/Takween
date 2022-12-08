@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Segoe UI Bold.ttf">
+            <string>SegoeUI-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" restorationIdentifier="MoreCell" selectionStyle="default" indentationWidth="10" reuseIdentifier="MoreCell" id="KGk-i7-Jjw" customClass="MoreCell" customModule="TkweenProject" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jAb-nu-Gwx">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="KxN-7Y-SaL">
+                                <rect key="frame" x="30" y="13.5" width="17" height="17"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="17" id="gNK-XA-W4W"/>
+                                    <constraint firstAttribute="height" constant="17" id="iKZ-ju-25w"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SsL-Zl-YYX">
+                                <rect key="frame" x="58" y="11.5" width="40" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="eOG-a2-Cxh"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="SegoeUI-Bold" family="Segoe UI" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="SsL-Zl-YYX" firstAttribute="centerY" secondItem="KxN-7Y-SaL" secondAttribute="centerY" id="0hy-Mh-jWR"/>
+                            <constraint firstItem="SsL-Zl-YYX" firstAttribute="leading" secondItem="KxN-7Y-SaL" secondAttribute="trailing" constant="11" id="SN7-8g-gx6"/>
+                            <constraint firstItem="KxN-7Y-SaL" firstAttribute="centerY" secondItem="jAb-nu-Gwx" secondAttribute="centerY" id="XkF-2p-1ma"/>
+                            <constraint firstItem="KxN-7Y-SaL" firstAttribute="leading" secondItem="jAb-nu-Gwx" secondAttribute="leading" constant="30" id="hPc-8K-zS4"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="jAb-nu-Gwx" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="0oJ-n5-dAu"/>
+                    <constraint firstItem="jAb-nu-Gwx" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="Ayt-ML-x39"/>
+                    <constraint firstAttribute="bottom" secondItem="jAb-nu-Gwx" secondAttribute="bottom" id="oFT-k7-Y3J"/>
+                    <constraint firstAttribute="trailing" secondItem="jAb-nu-Gwx" secondAttribute="trailing" id="vfU-Zf-QVu"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="profileImageView" destination="KxN-7Y-SaL" id="XPc-nR-q54"/>
+                <outlet property="profileNameLabel" destination="SsL-Zl-YYX" id="b7R-zC-M29"/>
+            </connections>
+            <point key="canvasLocation" x="131.8840579710145" y="129.91071428571428"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="segoe-ui.ttf">
+            <string>SegoeUI-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ProductCell" id="gTV-IL-0wX" customClass="ProductCell" customModule="TkweenProject" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="140" height="129"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="140" height="129"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="K2u-mJ-8dI">
+                        <rect key="frame" x="0.0" y="0.0" width="140" height="129"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_dummy" translatesAutoresizingMaskIntoConstraints="NO" id="Knu-Ox-CBb">
+                                <rect key="frame" x="20" y="0.0" width="100" height="90"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="fHQ-bX-RJT"/>
+                                    <constraint firstAttribute="height" constant="90" id="wsS-UI-PvQ"/>
+                                </constraints>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pjs-DB-95R">
+                                <rect key="frame" x="20" y="95" width="100" height="40"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="I6T-yZ-xgl">
+                                        <rect key="frame" x="29" y="5" width="58" height="25"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Special banner" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PYN-t6-eUa">
+                                                <rect key="frame" x="0.0" y="0.0" width="58" height="12.5"/>
+                                                <fontDescription key="fontDescription" name="SegoeUI-Regular" family="Segoe UI" pointSize="9"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="40 SR" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kZz-bF-YpB">
+                                                <rect key="frame" x="0.0" y="12.5" width="58" height="12.5"/>
+                                                <fontDescription key="fontDescription" name="SegoeUI-Regular" family="Segoe UI" pointSize="9"/>
+                                                <color key="textColor" systemColor="linkColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="25" id="En7-5R-e2I"/>
+                                        </constraints>
+                                    </stackView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JLx-6m-iwW">
+                                        <rect key="frame" x="5" y="5" width="19" height="19"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_profile" translatesAutoresizingMaskIntoConstraints="NO" id="DGd-cY-xoo">
+                                                <rect key="frame" x="2" y="2" width="15" height="15"/>
+                                            </imageView>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="DGd-cY-xoo" secondAttribute="trailing" constant="2" id="3h3-jw-QQe"/>
+                                            <constraint firstAttribute="bottom" secondItem="DGd-cY-xoo" secondAttribute="bottom" constant="2" id="5LE-tA-T7N"/>
+                                            <constraint firstItem="DGd-cY-xoo" firstAttribute="top" secondItem="JLx-6m-iwW" secondAttribute="top" constant="2" id="9C5-VS-L7c"/>
+                                            <constraint firstAttribute="height" constant="19" id="Kd1-RP-PnP"/>
+                                            <constraint firstAttribute="width" constant="19" id="eiD-3y-tOJ"/>
+                                            <constraint firstItem="DGd-cY-xoo" firstAttribute="leading" secondItem="JLx-6m-iwW" secondAttribute="leading" constant="2" id="nbt-d0-kUE"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="1oX-lk-L6t"/>
+                                    <constraint firstItem="JLx-6m-iwW" firstAttribute="leading" secondItem="pjs-DB-95R" secondAttribute="leading" constant="5" id="3ZI-qL-aEM"/>
+                                    <constraint firstAttribute="width" constant="100" id="613-cs-MGy"/>
+                                    <constraint firstItem="JLx-6m-iwW" firstAttribute="top" secondItem="pjs-DB-95R" secondAttribute="top" constant="5" id="ErX-4l-wr9"/>
+                                    <constraint firstItem="I6T-yZ-xgl" firstAttribute="leading" secondItem="JLx-6m-iwW" secondAttribute="trailing" constant="5" id="MZI-al-MaN"/>
+                                    <constraint firstItem="I6T-yZ-xgl" firstAttribute="top" secondItem="pjs-DB-95R" secondAttribute="top" constant="5" id="zyY-N2-HM1"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="pjs-DB-95R" firstAttribute="top" secondItem="Knu-Ox-CBb" secondAttribute="bottom" constant="5" id="Bic-pM-mXw"/>
+                            <constraint firstItem="Knu-Ox-CBb" firstAttribute="top" secondItem="K2u-mJ-8dI" secondAttribute="top" id="ZKb-rO-3gl"/>
+                            <constraint firstItem="pjs-DB-95R" firstAttribute="centerX" secondItem="K2u-mJ-8dI" secondAttribute="centerX" id="pGw-sS-z8d"/>
+                            <constraint firstItem="Knu-Ox-CBb" firstAttribute="centerX" secondItem="K2u-mJ-8dI" secondAttribute="centerX" id="tSd-et-ve0"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="K2u-mJ-8dI" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="3zx-GK-Ydh"/>
+                <constraint firstItem="K2u-mJ-8dI" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="Hy8-Ns-3bi"/>
+                <constraint firstAttribute="bottom" secondItem="K2u-mJ-8dI" secondAttribute="bottom" id="Sha-m3-pBL"/>
+                <constraint firstAttribute="trailing" secondItem="K2u-mJ-8dI" secondAttribute="trailing" id="WFQ-yd-eLN"/>
+            </constraints>
+            <size key="customSize" width="140" height="129"/>
+            <connections>
+                <outlet property="productCost" destination="kZz-bF-YpB" id="Nyn-bf-E4r"/>
+                <outlet property="productImageView" destination="Knu-Ox-CBb" id="CUu-ol-WcN"/>
+                <outlet property="productNameLabel" destination="PYN-t6-eUa" id="85L-z3-AEt"/>
+                <outlet property="userViewContainer" destination="JLx-6m-iwW" id="uGb-GO-RLV"/>
+            </connections>
+            <point key="canvasLocation" x="197.10144927536234" y="156.36160714285714"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="ic_dummy" width="100" height="90"/>
+        <image name="ic_profile" width="16.5" height="16.5"/>
+        <systemColor name="linkColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
