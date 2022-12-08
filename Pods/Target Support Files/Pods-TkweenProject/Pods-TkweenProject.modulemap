@@ -1,0 +1,6 @@
+framework module Pods_TkweenProject {
+  umbrella header "Pods-TkweenProject-umbrella.h"
+
+  export *
+  module * { export * }
+}

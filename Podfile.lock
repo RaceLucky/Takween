@@ -1,0 +1,20 @@
+PODS:
+  - IQKeyboardManager (6.5.9)
+  - LGSideMenuController (3.1.2)
+
+DEPENDENCIES:
+  - IQKeyboardManager
+  - LGSideMenuController
+
+SPEC REPOS:
+  trunk:
+    - IQKeyboardManager
+    - LGSideMenuController
+
+SPEC CHECKSUMS:
+  IQKeyboardManager: 241cc94ccabc9deb8f8bd7d12f00d73288d13ecc
+  LGSideMenuController: 0c7b155b0dbdf14bf8b88d5ac363c5fe1584bb23
+
+PODFILE CHECKSUM: 9fb5a05b28e2efe8c9b3d4509f7dc7108c4f70d9
+
+COCOAPODS: 1.11.2

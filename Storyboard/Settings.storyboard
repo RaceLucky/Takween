@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Setting Controller-->
+        <scene sceneID="qgj-83-X9n">
+            <objects>
+                <viewController storyboardIdentifier="SettingController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="7Mr-56-UIk" customClass="SettingController" customModule="TkweenProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="1xe-cF-epk">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_home_bg-1" translatesAutoresizingMaskIntoConstraints="NO" id="lV1-GI-RP9">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="280"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="280" id="n7I-eZ-QCa"/>
+                                </constraints>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2EM-TH-50y">
+                                <rect key="frame" x="0.0" y="49" width="414" height="813"/>
+                                <subviews>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="eHb-IA-bLA">
+                                        <rect key="frame" x="10" y="15" width="394" height="798"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    </tableView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="eHb-IA-bLA" firstAttribute="top" secondItem="2EM-TH-50y" secondAttribute="top" constant="15" id="4gf-IN-pCO"/>
+                                    <constraint firstAttribute="bottom" secondItem="eHb-IA-bLA" secondAttribute="bottom" id="9i4-zD-9Id"/>
+                                    <constraint firstAttribute="trailing" secondItem="eHb-IA-bLA" secondAttribute="trailing" constant="10" id="KQg-Ru-lst"/>
+                                    <constraint firstItem="eHb-IA-bLA" firstAttribute="leading" secondItem="2EM-TH-50y" secondAttribute="leading" constant="10" id="ZJ3-MB-tzl"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="0RX-3I-3cG"/>
+                        <color key="backgroundColor" red="0.29097878929999998" green="0.68915194270000002" blue="0.85015922779999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="lV1-GI-RP9" firstAttribute="trailing" secondItem="0RX-3I-3cG" secondAttribute="trailing" id="1R4-xN-QYO"/>
+                            <constraint firstItem="0RX-3I-3cG" firstAttribute="bottom" secondItem="2EM-TH-50y" secondAttribute="bottom" id="4c1-Om-5RF"/>
+                            <constraint firstItem="2EM-TH-50y" firstAttribute="top" secondItem="0RX-3I-3cG" secondAttribute="top" constant="5" id="H6o-7y-hCu"/>
+                            <constraint firstItem="2EM-TH-50y" firstAttribute="trailing" secondItem="0RX-3I-3cG" secondAttribute="trailing" id="Mcr-OX-IU1"/>
+                            <constraint firstItem="2EM-TH-50y" firstAttribute="leading" secondItem="1xe-cF-epk" secondAttribute="leading" id="Zjy-of-7LI"/>
+                            <constraint firstItem="lV1-GI-RP9" firstAttribute="top" secondItem="1xe-cF-epk" secondAttribute="top" id="ed8-vc-cNY"/>
+                            <constraint firstItem="lV1-GI-RP9" firstAttribute="leading" secondItem="0RX-3I-3cG" secondAttribute="leading" id="tbO-Z9-G2S"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="R7S-qY-ghI"/>
+                    <connections>
+                        <outlet property="settingTableView" destination="eHb-IA-bLA" id="RhA-iU-mgX"/>
+                        <outlet property="settingTableViewContainer" destination="2EM-TH-50y" id="mxF-S3-8da"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="63k-hQ-e2w" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3402.898550724638" y="-209.59821428571428"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ic_home_bg-1" width="428" height="372"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
